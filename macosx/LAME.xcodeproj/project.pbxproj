@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
-		8D07F2C00486CC7A007CD1D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		EA0A6AD40BB84E38003C87B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */; };
 		EA498C8D0DE5E37B00250F0E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
 		EA8CC08809A39A49001379B8 /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,12 +74,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAME_Prefix.pch; sourceTree = "<group>"; };
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 		EA8CC08709A39A49001379B8 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lame.h; path = ../include/lame.h; sourceTree = "<group>"; };
 		EA8CC08A09A39A55001379B8 /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 		EA8CC08B09A39A55001379B8 /* common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
-				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -352,9 +349,15 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LAME" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* LAME */;
 			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
 			projectDirPath = "";
@@ -370,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D07F2C00486CC7A007CD1D0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,17 +416,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				089C1667FE841158C02AAC07 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4FADC24308B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -444,6 +435,7 @@
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = LAME;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
@@ -452,10 +444,6 @@
 		4FADC24408B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -468,6 +456,7 @@
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = LAME;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
@@ -478,8 +467,6 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
@@ -488,8 +475,6 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};
