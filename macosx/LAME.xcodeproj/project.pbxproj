@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
-		EA0A6AD40BB84E38003C87B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */; };
 		EA498C8D0DE5E37B00250F0E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
 		EA8CC08809A39A49001379B8 /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA8CC0A509A39A55001379B8 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
@@ -76,8 +75,8 @@
 /* Begin PBXFileReference section */
 		32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAME_Prefix.pch; sourceTree = "<group>"; };
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Lame-Framework.xcconfig"; sourceTree = "<group>"; };
 		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 		EA8CC08709A39A49001379B8 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lame.h; path = ../include/lame.h; sourceTree = "<group>"; };
 		EA8CC08A09A39A55001379B8 /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
@@ -147,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0A6AD40BB84E38003C87B1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +155,7 @@
 		034768DDFF38A45A11DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D07F2C80486CC7A007CD1D0 /* LAME.framework */,
+				8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,24 +165,16 @@
 			children = (
 				08FB77ACFE841707C02AAC07 /* Source */,
 				089C1665FE841158C02AAC07 /* Resources */,
-				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 			);
 			name = LAME;
-			sourceTree = "<group>";
-		};
-		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				EA0A6AC20BB84D93003C87B1 /* Cocoa.framework */,
-			);
-			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
 		089C1665FE841158C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
+				D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -325,9 +315,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D07F2BC0486CC7A007CD1D0 /* LAME */ = {
+		8D07F2BC0486CC7A007CD1D0 /* LAME-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LAME" */;
+			buildConfigurationList = 4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LAME-macOS" */;
 			buildPhases = (
 				8D07F2BD0486CC7A007CD1D0 /* Headers */,
 				8D07F2BF0486CC7A007CD1D0 /* Resources */,
@@ -338,10 +328,10 @@
 			);
 			dependencies = (
 			);
-			name = LAME;
+			name = "LAME-macOS";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = LAME;
-			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME.framework */;
+			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -364,7 +354,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D07F2BC0486CC7A007CD1D0 /* LAME */,
+				8D07F2BC0486CC7A007CD1D0 /* LAME-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -421,37 +411,22 @@
 		4FADC24308B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LAME_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks/";
-				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = net.sourceforge.LAMEframework;
-				PRODUCT_NAME = LAME;
+				PRODUCT_NAME = "LAME-macOS";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
 		4FADC24408B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LAME_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks/";
-				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = net.sourceforge.LAMEframework;
-				PRODUCT_NAME = LAME;
+				PRODUCT_NAME = "LAME-macOS";
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
 		4FADC24708B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -489,6 +464,7 @@
 		};
 		4FADC24808B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -527,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LAME" */ = {
+		4FADC24208B4156D00ABE55E /* Build configuration list for PBXNativeTarget "LAME-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4FADC24308B4156D00ABE55E /* Debug */,

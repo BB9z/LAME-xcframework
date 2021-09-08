@@ -1,0 +1,15 @@
+//
+//  Lame-Framework.xcconfig
+//  LAME
+//
+//  Created by BB9z on 2021/9/8.
+//
+
+INFOPLIST_FILE = Info.plist;
+FRAMEWORK_VERSION = A;
+PRODUCT_MODULE_NAME = LAME;
+PRODUCT_BUNDLE_IDENTIFIER = net.sourceforge.LAMEframework;
+MACH_O_TYPE = staticlib;
+WRAPPER_EXTENSION = framework;
+GCC_PRECOMPILE_PREFIX_HEADER = YES;
+GCC_PREFIX_HEADER = LAME_Prefix.pch;
