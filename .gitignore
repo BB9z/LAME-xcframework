@@ -6,6 +6,7 @@
 **/*.xcworkspace/xcshareddata/*.xccheckout
 **/*.xcworkspace/xcshareddata/*.xcscmblueprint
 **/*.playground/**/timeline.xctimeline
+build/
 
 # CSV
 *.orig

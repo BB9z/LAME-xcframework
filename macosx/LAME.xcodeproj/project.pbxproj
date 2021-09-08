@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -656,6 +656,23 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
+/* Begin PBXLegacyTarget section */
+		D55AAD3326E8FDA300DD41EA /* XCFramework */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D55AAD3626E8FDA300DD41EA /* Build configuration list for PBXLegacyTarget "XCFramework" */;
+			buildPhases = (
+			);
+			buildToolPath = "./make-xcframework.sh";
+			buildWorkingDirectory = $SRCROOT;
+			dependencies = (
+			);
+			name = XCFramework;
+			passBuildSettingsInEnvironment = 1;
+			productName = XCFramework;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		8D07F2BC0486CC7A007CD1D0 /* LAME-macOS */ = {
 			isa = PBXNativeTarget;
@@ -740,6 +757,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D55AAD3326E8FDA300DD41EA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
 			};
 			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LAME" */;
 			compatibilityVersion = "Xcode 2.4";
@@ -757,6 +779,7 @@
 				D55AAC5826E8F9C100DD41EA /* LAME-iOS */,
 				D55AACA126E8FB3D00DD41EA /* LAME-tvOS */,
 				D55AACEA26E8FBD100DD41EA /* LAME-watchOS */,
+				D55AAD3326E8FDA300DD41EA /* XCFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -939,7 +962,11 @@
 		4FADC24308B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "LAME-macOS";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -947,7 +974,11 @@
 		4FADC24408B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				PRODUCT_NAME = "LAME-macOS";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1076,6 +1107,18 @@
 			};
 			name = Release;
 		};
+		D55AAD3426E8FDA300DD41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D55AAD3526E8FDA300DD41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1120,6 +1163,15 @@
 			buildConfigurations = (
 				D55AAD2F26E8FBD100DD41EA /* Debug */,
 				D55AAD3026E8FBD100DD41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55AAD3626E8FDA300DD41EA /* Build configuration list for PBXLegacyTarget "XCFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55AAD3426E8FDA300DD41EA /* Debug */,
+				D55AAD3526E8FDA300DD41EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
