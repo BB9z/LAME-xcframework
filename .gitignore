@@ -1,0 +1,66 @@
+# Xcode Project
+**/*.xcodeproj/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/.swiftpm/xcode/xcuserdata/
+**/*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+**/*.xcworkspace/xcshareddata/*.xccheckout
+**/*.xcworkspace/xcshareddata/*.xcscmblueprint
+**/*.playground/**/timeline.xctimeline
+
+# CSV
+*.orig
+.svn
+
+# Other
+*~
+.DS_Store
+*.swp
+*.save
+._*
+*.bak
+
+# lame source
+
+## Unneeded subprojects
+/ACM
+/debian
+/Dll
+/dshow
+/frontend
+/misc
+/vc_solution
+/README.WINGTK
+/USAGE
+
+## Test files
+/*.m4
+/*.mp3
+/*.wav
+
+## project files
+/DEFINES
+/INSTALL
+/INSTALL.configure
+/lame.bat
+/lame.spec
+/HACKING
+/README
+/STYLEGUIDE
+/TODO
+
+## config temp
+/conftest
+/conftest.*
+/stamp-h1
+/Makefile
+
+## config
+!/install-sh
+!/lame.spec.in
+!/ltmain.sh
+
+## Misc
+/compile
+/depcomp
+/Makefile.*
+/missing
