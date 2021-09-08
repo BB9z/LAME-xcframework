@@ -8,6 +8,195 @@
 
 /* Begin PBXBuildFile section */
 		8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
+		D55AAC5A26E8F9C100DD41EA /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
+		D55AAC5B26E8F9C100DD41EA /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D55AAC5C26E8F9C100DD41EA /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08B09A39A55001379B8 /* common.h */; };
+		D55AAC5D26E8F9C100DD41EA /* dct64_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08D09A39A55001379B8 /* dct64_i386.h */; };
+		D55AAC5E26E8F9C100DD41EA /* decode_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08F09A39A55001379B8 /* decode_i386.h */; };
+		D55AAC5F26E8F9C100DD41EA /* huffman.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09109A39A55001379B8 /* huffman.h */; };
+		D55AAC6026E8F9C100DD41EA /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09309A39A55001379B8 /* interface.h */; };
+		D55AAC6126E8F9C100DD41EA /* l2tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09409A39A55001379B8 /* l2tables.h */; };
+		D55AAC6226E8F9C100DD41EA /* layer1.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09609A39A55001379B8 /* layer1.h */; };
+		D55AAC6326E8F9C100DD41EA /* layer2.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09809A39A55001379B8 /* layer2.h */; };
+		D55AAC6426E8F9C100DD41EA /* layer3.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09A09A39A55001379B8 /* layer3.h */; };
+		D55AAC6526E8F9C100DD41EA /* mpg123.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09D09A39A55001379B8 /* mpg123.h */; };
+		D55AAC6626E8F9C100DD41EA /* mpglib.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09E09A39A55001379B8 /* mpglib.h */; };
+		D55AAC6726E8F9C100DD41EA /* tabinit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0A309A39A55001379B8 /* tabinit.h */; };
+		D55AAC6826E8F9C100DD41EA /* bitstream.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C209A39A5E001379B8 /* bitstream.h */; };
+		D55AAC6926E8F9C100DD41EA /* encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C509A39A5E001379B8 /* encoder.h */; };
+		D55AAC6A26E8F9C100DD41EA /* fft.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C709A39A5E001379B8 /* fft.h */; };
+		D55AAC6B26E8F9C100DD41EA /* gain_analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C909A39A5E001379B8 /* gain_analysis.h */; };
+		D55AAC6C26E8F9C100DD41EA /* id3tag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D609A39A5E001379B8 /* id3tag.h */; };
+		D55AAC6D26E8F9C100DD41EA /* l3side.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D709A39A5E001379B8 /* l3side.h */; };
+		D55AAC6E26E8F9C100DD41EA /* lame-analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D809A39A5E001379B8 /* lame-analysis.h */; };
+		D55AAC6F26E8F9C100DD41EA /* lame_global_flags.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DA09A39A5E001379B8 /* lame_global_flags.h */; };
+		D55AAC7026E8F9C100DD41EA /* machine.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DD09A39A5E001379B8 /* machine.h */; };
+		D55AAC7126E8F9C100DD41EA /* newmdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E209A39A5E001379B8 /* newmdct.h */; };
+		D55AAC7226E8F9C100DD41EA /* psymodel.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E509A39A5E001379B8 /* psymodel.h */; };
+		D55AAC7326E8F9C100DD41EA /* quantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E709A39A5E001379B8 /* quantize.h */; };
+		D55AAC7426E8F9C100DD41EA /* quantize_pvt.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E909A39A5E001379B8 /* quantize_pvt.h */; };
+		D55AAC7526E8F9C100DD41EA /* reservoir.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EB09A39A5E001379B8 /* reservoir.h */; };
+		D55AAC7626E8F9C100DD41EA /* set_get.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0ED09A39A5E001379B8 /* set_get.h */; };
+		D55AAC7726E8F9C100DD41EA /* tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EF09A39A5E001379B8 /* tables.h */; };
+		D55AAC7826E8F9C100DD41EA /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F209A39A5E001379B8 /* util.h */; };
+		D55AAC7926E8F9C100DD41EA /* vbrquantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F409A39A5E001379B8 /* vbrquantize.h */; };
+		D55AAC7A26E8F9C100DD41EA /* VbrTag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F609A39A5E001379B8 /* VbrTag.h */; };
+		D55AAC7B26E8F9C100DD41EA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F809A39A5E001379B8 /* version.h */; };
+		D55AAC7C26E8F9C100DD41EA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
+		D55AAC7F26E8F9C100DD41EA /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
+		D55AAC8026E8F9C100DD41EA /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08C09A39A55001379B8 /* dct64_i386.c */; };
+		D55AAC8126E8F9C100DD41EA /* decode_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08E09A39A55001379B8 /* decode_i386.c */; };
+		D55AAC8226E8F9C100DD41EA /* interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09209A39A55001379B8 /* interface.c */; };
+		D55AAC8326E8F9C100DD41EA /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09509A39A55001379B8 /* layer1.c */; };
+		D55AAC8426E8F9C100DD41EA /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09709A39A55001379B8 /* layer2.c */; };
+		D55AAC8526E8F9C100DD41EA /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09909A39A55001379B8 /* layer3.c */; };
+		D55AAC8626E8F9C100DD41EA /* tabinit.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0A209A39A55001379B8 /* tabinit.c */; };
+		D55AAC8726E8F9C100DD41EA /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C109A39A5E001379B8 /* bitstream.c */; };
+		D55AAC8826E8F9C100DD41EA /* encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C409A39A5E001379B8 /* encoder.c */; };
+		D55AAC8926E8F9C100DD41EA /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C609A39A5E001379B8 /* fft.c */; };
+		D55AAC8A26E8F9C100DD41EA /* gain_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C809A39A5E001379B8 /* gain_analysis.c */; };
+		D55AAC8B26E8F9C100DD41EA /* id3tag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D509A39A5E001379B8 /* id3tag.c */; };
+		D55AAC8C26E8F9C100DD41EA /* lame.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D909A39A5E001379B8 /* lame.c */; };
+		D55AAC8D26E8F9C100DD41EA /* mpglib_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E009A39A5E001379B8 /* mpglib_interface.c */; };
+		D55AAC8E26E8F9C100DD41EA /* newmdct.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E109A39A5E001379B8 /* newmdct.c */; };
+		D55AAC8F26E8F9C100DD41EA /* presets.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E309A39A5E001379B8 /* presets.c */; };
+		D55AAC9026E8F9C100DD41EA /* psymodel.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E409A39A5E001379B8 /* psymodel.c */; };
+		D55AAC9126E8F9C100DD41EA /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E609A39A5E001379B8 /* quantize.c */; };
+		D55AAC9226E8F9C100DD41EA /* quantize_pvt.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E809A39A5E001379B8 /* quantize_pvt.c */; };
+		D55AAC9326E8F9C100DD41EA /* reservoir.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EA09A39A5E001379B8 /* reservoir.c */; };
+		D55AAC9426E8F9C100DD41EA /* set_get.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EC09A39A5E001379B8 /* set_get.c */; };
+		D55AAC9526E8F9C100DD41EA /* tables.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EE09A39A5E001379B8 /* tables.c */; };
+		D55AAC9626E8F9C100DD41EA /* takehiro.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F009A39A5E001379B8 /* takehiro.c */; };
+		D55AAC9726E8F9C100DD41EA /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F109A39A5E001379B8 /* util.c */; };
+		D55AAC9826E8F9C100DD41EA /* vbrquantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F309A39A5E001379B8 /* vbrquantize.c */; };
+		D55AAC9926E8F9C100DD41EA /* VbrTag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F509A39A5E001379B8 /* VbrTag.c */; };
+		D55AAC9A26E8F9C100DD41EA /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F709A39A5E001379B8 /* version.c */; };
+		D55AACA326E8FB3D00DD41EA /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
+		D55AACA426E8FB3D00DD41EA /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D55AACA526E8FB3D00DD41EA /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08B09A39A55001379B8 /* common.h */; };
+		D55AACA626E8FB3D00DD41EA /* dct64_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08D09A39A55001379B8 /* dct64_i386.h */; };
+		D55AACA726E8FB3D00DD41EA /* decode_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08F09A39A55001379B8 /* decode_i386.h */; };
+		D55AACA826E8FB3D00DD41EA /* huffman.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09109A39A55001379B8 /* huffman.h */; };
+		D55AACA926E8FB3D00DD41EA /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09309A39A55001379B8 /* interface.h */; };
+		D55AACAA26E8FB3D00DD41EA /* l2tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09409A39A55001379B8 /* l2tables.h */; };
+		D55AACAB26E8FB3D00DD41EA /* layer1.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09609A39A55001379B8 /* layer1.h */; };
+		D55AACAC26E8FB3D00DD41EA /* layer2.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09809A39A55001379B8 /* layer2.h */; };
+		D55AACAD26E8FB3D00DD41EA /* layer3.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09A09A39A55001379B8 /* layer3.h */; };
+		D55AACAE26E8FB3D00DD41EA /* mpg123.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09D09A39A55001379B8 /* mpg123.h */; };
+		D55AACAF26E8FB3D00DD41EA /* mpglib.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09E09A39A55001379B8 /* mpglib.h */; };
+		D55AACB026E8FB3D00DD41EA /* tabinit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0A309A39A55001379B8 /* tabinit.h */; };
+		D55AACB126E8FB3D00DD41EA /* bitstream.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C209A39A5E001379B8 /* bitstream.h */; };
+		D55AACB226E8FB3D00DD41EA /* encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C509A39A5E001379B8 /* encoder.h */; };
+		D55AACB326E8FB3D00DD41EA /* fft.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C709A39A5E001379B8 /* fft.h */; };
+		D55AACB426E8FB3D00DD41EA /* gain_analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C909A39A5E001379B8 /* gain_analysis.h */; };
+		D55AACB526E8FB3D00DD41EA /* id3tag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D609A39A5E001379B8 /* id3tag.h */; };
+		D55AACB626E8FB3D00DD41EA /* l3side.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D709A39A5E001379B8 /* l3side.h */; };
+		D55AACB726E8FB3D00DD41EA /* lame-analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D809A39A5E001379B8 /* lame-analysis.h */; };
+		D55AACB826E8FB3D00DD41EA /* lame_global_flags.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DA09A39A5E001379B8 /* lame_global_flags.h */; };
+		D55AACB926E8FB3D00DD41EA /* machine.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DD09A39A5E001379B8 /* machine.h */; };
+		D55AACBA26E8FB3D00DD41EA /* newmdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E209A39A5E001379B8 /* newmdct.h */; };
+		D55AACBB26E8FB3D00DD41EA /* psymodel.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E509A39A5E001379B8 /* psymodel.h */; };
+		D55AACBC26E8FB3D00DD41EA /* quantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E709A39A5E001379B8 /* quantize.h */; };
+		D55AACBD26E8FB3D00DD41EA /* quantize_pvt.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E909A39A5E001379B8 /* quantize_pvt.h */; };
+		D55AACBE26E8FB3D00DD41EA /* reservoir.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EB09A39A5E001379B8 /* reservoir.h */; };
+		D55AACBF26E8FB3D00DD41EA /* set_get.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0ED09A39A5E001379B8 /* set_get.h */; };
+		D55AACC026E8FB3D00DD41EA /* tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EF09A39A5E001379B8 /* tables.h */; };
+		D55AACC126E8FB3D00DD41EA /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F209A39A5E001379B8 /* util.h */; };
+		D55AACC226E8FB3D00DD41EA /* vbrquantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F409A39A5E001379B8 /* vbrquantize.h */; };
+		D55AACC326E8FB3D00DD41EA /* VbrTag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F609A39A5E001379B8 /* VbrTag.h */; };
+		D55AACC426E8FB3D00DD41EA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F809A39A5E001379B8 /* version.h */; };
+		D55AACC526E8FB3D00DD41EA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
+		D55AACC826E8FB3D00DD41EA /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
+		D55AACC926E8FB3D00DD41EA /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08C09A39A55001379B8 /* dct64_i386.c */; };
+		D55AACCA26E8FB3D00DD41EA /* decode_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08E09A39A55001379B8 /* decode_i386.c */; };
+		D55AACCB26E8FB3D00DD41EA /* interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09209A39A55001379B8 /* interface.c */; };
+		D55AACCC26E8FB3D00DD41EA /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09509A39A55001379B8 /* layer1.c */; };
+		D55AACCD26E8FB3D00DD41EA /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09709A39A55001379B8 /* layer2.c */; };
+		D55AACCE26E8FB3D00DD41EA /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09909A39A55001379B8 /* layer3.c */; };
+		D55AACCF26E8FB3D00DD41EA /* tabinit.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0A209A39A55001379B8 /* tabinit.c */; };
+		D55AACD026E8FB3D00DD41EA /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C109A39A5E001379B8 /* bitstream.c */; };
+		D55AACD126E8FB3D00DD41EA /* encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C409A39A5E001379B8 /* encoder.c */; };
+		D55AACD226E8FB3D00DD41EA /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C609A39A5E001379B8 /* fft.c */; };
+		D55AACD326E8FB3D00DD41EA /* gain_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C809A39A5E001379B8 /* gain_analysis.c */; };
+		D55AACD426E8FB3D00DD41EA /* id3tag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D509A39A5E001379B8 /* id3tag.c */; };
+		D55AACD526E8FB3D00DD41EA /* lame.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D909A39A5E001379B8 /* lame.c */; };
+		D55AACD626E8FB3D00DD41EA /* mpglib_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E009A39A5E001379B8 /* mpglib_interface.c */; };
+		D55AACD726E8FB3D00DD41EA /* newmdct.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E109A39A5E001379B8 /* newmdct.c */; };
+		D55AACD826E8FB3D00DD41EA /* presets.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E309A39A5E001379B8 /* presets.c */; };
+		D55AACD926E8FB3D00DD41EA /* psymodel.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E409A39A5E001379B8 /* psymodel.c */; };
+		D55AACDA26E8FB3D00DD41EA /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E609A39A5E001379B8 /* quantize.c */; };
+		D55AACDB26E8FB3D00DD41EA /* quantize_pvt.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E809A39A5E001379B8 /* quantize_pvt.c */; };
+		D55AACDC26E8FB3D00DD41EA /* reservoir.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EA09A39A5E001379B8 /* reservoir.c */; };
+		D55AACDD26E8FB3D00DD41EA /* set_get.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EC09A39A5E001379B8 /* set_get.c */; };
+		D55AACDE26E8FB3D00DD41EA /* tables.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EE09A39A5E001379B8 /* tables.c */; };
+		D55AACDF26E8FB3D00DD41EA /* takehiro.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F009A39A5E001379B8 /* takehiro.c */; };
+		D55AACE026E8FB3D00DD41EA /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F109A39A5E001379B8 /* util.c */; };
+		D55AACE126E8FB3D00DD41EA /* vbrquantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F309A39A5E001379B8 /* vbrquantize.c */; };
+		D55AACE226E8FB3D00DD41EA /* VbrTag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F509A39A5E001379B8 /* VbrTag.c */; };
+		D55AACE326E8FB3D00DD41EA /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F709A39A5E001379B8 /* version.c */; };
+		D55AACEC26E8FBD100DD41EA /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
+		D55AACED26E8FBD100DD41EA /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D55AACEE26E8FBD100DD41EA /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08B09A39A55001379B8 /* common.h */; };
+		D55AACEF26E8FBD100DD41EA /* dct64_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08D09A39A55001379B8 /* dct64_i386.h */; };
+		D55AACF026E8FBD100DD41EA /* decode_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08F09A39A55001379B8 /* decode_i386.h */; };
+		D55AACF126E8FBD100DD41EA /* huffman.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09109A39A55001379B8 /* huffman.h */; };
+		D55AACF226E8FBD100DD41EA /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09309A39A55001379B8 /* interface.h */; };
+		D55AACF326E8FBD100DD41EA /* l2tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09409A39A55001379B8 /* l2tables.h */; };
+		D55AACF426E8FBD100DD41EA /* layer1.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09609A39A55001379B8 /* layer1.h */; };
+		D55AACF526E8FBD100DD41EA /* layer2.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09809A39A55001379B8 /* layer2.h */; };
+		D55AACF626E8FBD100DD41EA /* layer3.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09A09A39A55001379B8 /* layer3.h */; };
+		D55AACF726E8FBD100DD41EA /* mpg123.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09D09A39A55001379B8 /* mpg123.h */; };
+		D55AACF826E8FBD100DD41EA /* mpglib.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC09E09A39A55001379B8 /* mpglib.h */; };
+		D55AACF926E8FBD100DD41EA /* tabinit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0A309A39A55001379B8 /* tabinit.h */; };
+		D55AACFA26E8FBD100DD41EA /* bitstream.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C209A39A5E001379B8 /* bitstream.h */; };
+		D55AACFB26E8FBD100DD41EA /* encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C509A39A5E001379B8 /* encoder.h */; };
+		D55AACFC26E8FBD100DD41EA /* fft.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C709A39A5E001379B8 /* fft.h */; };
+		D55AACFD26E8FBD100DD41EA /* gain_analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0C909A39A5E001379B8 /* gain_analysis.h */; };
+		D55AACFE26E8FBD100DD41EA /* id3tag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D609A39A5E001379B8 /* id3tag.h */; };
+		D55AACFF26E8FBD100DD41EA /* l3side.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D709A39A5E001379B8 /* l3side.h */; };
+		D55AAD0026E8FBD100DD41EA /* lame-analysis.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0D809A39A5E001379B8 /* lame-analysis.h */; };
+		D55AAD0126E8FBD100DD41EA /* lame_global_flags.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DA09A39A5E001379B8 /* lame_global_flags.h */; };
+		D55AAD0226E8FBD100DD41EA /* machine.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0DD09A39A5E001379B8 /* machine.h */; };
+		D55AAD0326E8FBD100DD41EA /* newmdct.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E209A39A5E001379B8 /* newmdct.h */; };
+		D55AAD0426E8FBD100DD41EA /* psymodel.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E509A39A5E001379B8 /* psymodel.h */; };
+		D55AAD0526E8FBD100DD41EA /* quantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E709A39A5E001379B8 /* quantize.h */; };
+		D55AAD0626E8FBD100DD41EA /* quantize_pvt.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0E909A39A5E001379B8 /* quantize_pvt.h */; };
+		D55AAD0726E8FBD100DD41EA /* reservoir.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EB09A39A5E001379B8 /* reservoir.h */; };
+		D55AAD0826E8FBD100DD41EA /* set_get.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0ED09A39A5E001379B8 /* set_get.h */; };
+		D55AAD0926E8FBD100DD41EA /* tables.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0EF09A39A5E001379B8 /* tables.h */; };
+		D55AAD0A26E8FBD100DD41EA /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F209A39A5E001379B8 /* util.h */; };
+		D55AAD0B26E8FBD100DD41EA /* vbrquantize.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F409A39A5E001379B8 /* vbrquantize.h */; };
+		D55AAD0C26E8FBD100DD41EA /* VbrTag.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F609A39A5E001379B8 /* VbrTag.h */; };
+		D55AAD0D26E8FBD100DD41EA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC0F809A39A5E001379B8 /* version.h */; };
+		D55AAD0E26E8FBD100DD41EA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
+		D55AAD1126E8FBD100DD41EA /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
+		D55AAD1226E8FBD100DD41EA /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08C09A39A55001379B8 /* dct64_i386.c */; };
+		D55AAD1326E8FBD100DD41EA /* decode_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08E09A39A55001379B8 /* decode_i386.c */; };
+		D55AAD1426E8FBD100DD41EA /* interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09209A39A55001379B8 /* interface.c */; };
+		D55AAD1526E8FBD100DD41EA /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09509A39A55001379B8 /* layer1.c */; };
+		D55AAD1626E8FBD100DD41EA /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09709A39A55001379B8 /* layer2.c */; };
+		D55AAD1726E8FBD100DD41EA /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC09909A39A55001379B8 /* layer3.c */; };
+		D55AAD1826E8FBD100DD41EA /* tabinit.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0A209A39A55001379B8 /* tabinit.c */; };
+		D55AAD1926E8FBD100DD41EA /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C109A39A5E001379B8 /* bitstream.c */; };
+		D55AAD1A26E8FBD100DD41EA /* encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C409A39A5E001379B8 /* encoder.c */; };
+		D55AAD1B26E8FBD100DD41EA /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C609A39A5E001379B8 /* fft.c */; };
+		D55AAD1C26E8FBD100DD41EA /* gain_analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0C809A39A5E001379B8 /* gain_analysis.c */; };
+		D55AAD1D26E8FBD100DD41EA /* id3tag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D509A39A5E001379B8 /* id3tag.c */; };
+		D55AAD1E26E8FBD100DD41EA /* lame.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0D909A39A5E001379B8 /* lame.c */; };
+		D55AAD1F26E8FBD100DD41EA /* mpglib_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E009A39A5E001379B8 /* mpglib_interface.c */; };
+		D55AAD2026E8FBD100DD41EA /* newmdct.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E109A39A5E001379B8 /* newmdct.c */; };
+		D55AAD2126E8FBD100DD41EA /* presets.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E309A39A5E001379B8 /* presets.c */; };
+		D55AAD2226E8FBD100DD41EA /* psymodel.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E409A39A5E001379B8 /* psymodel.c */; };
+		D55AAD2326E8FBD100DD41EA /* quantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E609A39A5E001379B8 /* quantize.c */; };
+		D55AAD2426E8FBD100DD41EA /* quantize_pvt.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0E809A39A5E001379B8 /* quantize_pvt.c */; };
+		D55AAD2526E8FBD100DD41EA /* reservoir.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EA09A39A5E001379B8 /* reservoir.c */; };
+		D55AAD2626E8FBD100DD41EA /* set_get.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EC09A39A5E001379B8 /* set_get.c */; };
+		D55AAD2726E8FBD100DD41EA /* tables.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0EE09A39A5E001379B8 /* tables.c */; };
+		D55AAD2826E8FBD100DD41EA /* takehiro.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F009A39A5E001379B8 /* takehiro.c */; };
+		D55AAD2926E8FBD100DD41EA /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F109A39A5E001379B8 /* util.c */; };
+		D55AAD2A26E8FBD100DD41EA /* vbrquantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F309A39A5E001379B8 /* vbrquantize.c */; };
+		D55AAD2B26E8FBD100DD41EA /* VbrTag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F509A39A5E001379B8 /* VbrTag.c */; };
+		D55AAD2C26E8FBD100DD41EA /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F709A39A5E001379B8 /* version.c */; };
 		EA498C8D0DE5E37B00250F0E /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = EA498C8C0DE5E37B00250F0E /* config.h */; };
 		EA8CC08809A39A49001379B8 /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA8CC0A509A39A55001379B8 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC08A09A39A55001379B8 /* common.c */; };
@@ -77,6 +266,9 @@
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Lame-Framework.xcconfig"; sourceTree = "<group>"; };
+		D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 		EA8CC08709A39A49001379B8 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lame.h; path = ../include/lame.h; sourceTree = "<group>"; };
 		EA8CC08A09A39A55001379B8 /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
@@ -142,6 +334,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D55AAC9B26E8F9C100DD41EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AACE426E8FB3D00DD41EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAD2D26E8FBD100DD41EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA0A6AD20BB84E32003C87B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,7 +368,10 @@
 		034768DDFF38A45A11DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */,
 				8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */,
+				D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */,
+				D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,11 +398,11 @@
 		08FB77ACFE841707C02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */,
-				EA8CC08709A39A49001379B8 /* lame.h */,
-				EA498C8C0DE5E37B00250F0E /* config.h */,
 				EA8CC0C009A39A5E001379B8 /* libmp3lame */,
 				EA8CC08909A39A55001379B8 /* mpglib */,
+				EA498C8C0DE5E37B00250F0E /* config.h */,
+				EA8CC08709A39A49001379B8 /* lame.h */,
+				32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -274,41 +490,167 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */,
-				EA8CC08809A39A49001379B8 /* lame.h in Headers */,
+				EA8CC0FA09A39A5E001379B8 /* bitstream.h in Headers */,
 				EA8CC0A609A39A55001379B8 /* common.h in Headers */,
+				EA498C8D0DE5E37B00250F0E /* config.h in Headers */,
 				EA8CC0A809A39A55001379B8 /* dct64_i386.h in Headers */,
 				EA8CC0AA09A39A55001379B8 /* decode_i386.h in Headers */,
-				EA8CC0AC09A39A55001379B8 /* huffman.h in Headers */,
-				EA8CC0AE09A39A55001379B8 /* interface.h in Headers */,
-				EA8CC0AF09A39A55001379B8 /* l2tables.h in Headers */,
-				EA8CC0B109A39A55001379B8 /* layer1.h in Headers */,
-				EA8CC0B309A39A55001379B8 /* layer2.h in Headers */,
-				EA8CC0B509A39A55001379B8 /* layer3.h in Headers */,
-				EA8CC0B809A39A55001379B8 /* mpg123.h in Headers */,
-				EA8CC0B909A39A55001379B8 /* mpglib.h in Headers */,
-				EA8CC0BE09A39A55001379B8 /* tabinit.h in Headers */,
-				EA8CC0FA09A39A5E001379B8 /* bitstream.h in Headers */,
 				EA8CC0FD09A39A5E001379B8 /* encoder.h in Headers */,
 				EA8CC0FF09A39A5E001379B8 /* fft.h in Headers */,
 				EA8CC10109A39A5E001379B8 /* gain_analysis.h in Headers */,
+				EA8CC0AC09A39A55001379B8 /* huffman.h in Headers */,
 				EA8CC10D09A39A5E001379B8 /* id3tag.h in Headers */,
+				EA8CC0AE09A39A55001379B8 /* interface.h in Headers */,
+				EA8CC0AF09A39A55001379B8 /* l2tables.h in Headers */,
 				EA8CC10E09A39A5E001379B8 /* l3side.h in Headers */,
 				EA8CC10F09A39A5E001379B8 /* lame-analysis.h in Headers */,
+				EA8CC08809A39A49001379B8 /* lame.h in Headers */,
 				EA8CC11109A39A5E001379B8 /* lame_global_flags.h in Headers */,
+				8D07F2BE0486CC7A007CD1D0 /* LAME_Prefix.pch in Headers */,
+				EA8CC0B109A39A55001379B8 /* layer1.h in Headers */,
+				EA8CC0B309A39A55001379B8 /* layer2.h in Headers */,
+				EA8CC0B509A39A55001379B8 /* layer3.h in Headers */,
 				EA8CC11409A39A5E001379B8 /* machine.h in Headers */,
+				EA8CC0B809A39A55001379B8 /* mpg123.h in Headers */,
+				EA8CC0B909A39A55001379B8 /* mpglib.h in Headers */,
 				EA8CC11909A39A5E001379B8 /* newmdct.h in Headers */,
 				EA8CC11C09A39A5E001379B8 /* psymodel.h in Headers */,
 				EA8CC11E09A39A5E001379B8 /* quantize.h in Headers */,
 				EA8CC12009A39A5E001379B8 /* quantize_pvt.h in Headers */,
 				EA8CC12209A39A5E001379B8 /* reservoir.h in Headers */,
 				EA8CC12409A39A5E001379B8 /* set_get.h in Headers */,
+				EA8CC0BE09A39A55001379B8 /* tabinit.h in Headers */,
 				EA8CC12609A39A5E001379B8 /* tables.h in Headers */,
 				EA8CC12909A39A5E001379B8 /* util.h in Headers */,
 				EA8CC12B09A39A5E001379B8 /* vbrquantize.h in Headers */,
 				EA8CC12D09A39A5E001379B8 /* VbrTag.h in Headers */,
 				EA8CC12F09A39A5E001379B8 /* version.h in Headers */,
-				EA498C8D0DE5E37B00250F0E /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAC5926E8F9C100DD41EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AAC6826E8F9C100DD41EA /* bitstream.h in Headers */,
+				D55AAC5C26E8F9C100DD41EA /* common.h in Headers */,
+				D55AAC7C26E8F9C100DD41EA /* config.h in Headers */,
+				D55AAC5D26E8F9C100DD41EA /* dct64_i386.h in Headers */,
+				D55AAC5E26E8F9C100DD41EA /* decode_i386.h in Headers */,
+				D55AAC6926E8F9C100DD41EA /* encoder.h in Headers */,
+				D55AAC6A26E8F9C100DD41EA /* fft.h in Headers */,
+				D55AAC6B26E8F9C100DD41EA /* gain_analysis.h in Headers */,
+				D55AAC5F26E8F9C100DD41EA /* huffman.h in Headers */,
+				D55AAC6C26E8F9C100DD41EA /* id3tag.h in Headers */,
+				D55AAC6026E8F9C100DD41EA /* interface.h in Headers */,
+				D55AAC6126E8F9C100DD41EA /* l2tables.h in Headers */,
+				D55AAC6D26E8F9C100DD41EA /* l3side.h in Headers */,
+				D55AAC6E26E8F9C100DD41EA /* lame-analysis.h in Headers */,
+				D55AAC5B26E8F9C100DD41EA /* lame.h in Headers */,
+				D55AAC6F26E8F9C100DD41EA /* lame_global_flags.h in Headers */,
+				D55AAC5A26E8F9C100DD41EA /* LAME_Prefix.pch in Headers */,
+				D55AAC6226E8F9C100DD41EA /* layer1.h in Headers */,
+				D55AAC6326E8F9C100DD41EA /* layer2.h in Headers */,
+				D55AAC6426E8F9C100DD41EA /* layer3.h in Headers */,
+				D55AAC7026E8F9C100DD41EA /* machine.h in Headers */,
+				D55AAC6526E8F9C100DD41EA /* mpg123.h in Headers */,
+				D55AAC6626E8F9C100DD41EA /* mpglib.h in Headers */,
+				D55AAC7126E8F9C100DD41EA /* newmdct.h in Headers */,
+				D55AAC7226E8F9C100DD41EA /* psymodel.h in Headers */,
+				D55AAC7326E8F9C100DD41EA /* quantize.h in Headers */,
+				D55AAC7426E8F9C100DD41EA /* quantize_pvt.h in Headers */,
+				D55AAC7526E8F9C100DD41EA /* reservoir.h in Headers */,
+				D55AAC7626E8F9C100DD41EA /* set_get.h in Headers */,
+				D55AAC6726E8F9C100DD41EA /* tabinit.h in Headers */,
+				D55AAC7726E8F9C100DD41EA /* tables.h in Headers */,
+				D55AAC7826E8F9C100DD41EA /* util.h in Headers */,
+				D55AAC7926E8F9C100DD41EA /* vbrquantize.h in Headers */,
+				D55AAC7A26E8F9C100DD41EA /* VbrTag.h in Headers */,
+				D55AAC7B26E8F9C100DD41EA /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AACA226E8FB3D00DD41EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AACB126E8FB3D00DD41EA /* bitstream.h in Headers */,
+				D55AACA526E8FB3D00DD41EA /* common.h in Headers */,
+				D55AACC526E8FB3D00DD41EA /* config.h in Headers */,
+				D55AACA626E8FB3D00DD41EA /* dct64_i386.h in Headers */,
+				D55AACA726E8FB3D00DD41EA /* decode_i386.h in Headers */,
+				D55AACB226E8FB3D00DD41EA /* encoder.h in Headers */,
+				D55AACB326E8FB3D00DD41EA /* fft.h in Headers */,
+				D55AACB426E8FB3D00DD41EA /* gain_analysis.h in Headers */,
+				D55AACA826E8FB3D00DD41EA /* huffman.h in Headers */,
+				D55AACB526E8FB3D00DD41EA /* id3tag.h in Headers */,
+				D55AACA926E8FB3D00DD41EA /* interface.h in Headers */,
+				D55AACAA26E8FB3D00DD41EA /* l2tables.h in Headers */,
+				D55AACB626E8FB3D00DD41EA /* l3side.h in Headers */,
+				D55AACB726E8FB3D00DD41EA /* lame-analysis.h in Headers */,
+				D55AACA426E8FB3D00DD41EA /* lame.h in Headers */,
+				D55AACB826E8FB3D00DD41EA /* lame_global_flags.h in Headers */,
+				D55AACA326E8FB3D00DD41EA /* LAME_Prefix.pch in Headers */,
+				D55AACAB26E8FB3D00DD41EA /* layer1.h in Headers */,
+				D55AACAC26E8FB3D00DD41EA /* layer2.h in Headers */,
+				D55AACAD26E8FB3D00DD41EA /* layer3.h in Headers */,
+				D55AACB926E8FB3D00DD41EA /* machine.h in Headers */,
+				D55AACAE26E8FB3D00DD41EA /* mpg123.h in Headers */,
+				D55AACAF26E8FB3D00DD41EA /* mpglib.h in Headers */,
+				D55AACBA26E8FB3D00DD41EA /* newmdct.h in Headers */,
+				D55AACBB26E8FB3D00DD41EA /* psymodel.h in Headers */,
+				D55AACBC26E8FB3D00DD41EA /* quantize.h in Headers */,
+				D55AACBD26E8FB3D00DD41EA /* quantize_pvt.h in Headers */,
+				D55AACBE26E8FB3D00DD41EA /* reservoir.h in Headers */,
+				D55AACBF26E8FB3D00DD41EA /* set_get.h in Headers */,
+				D55AACB026E8FB3D00DD41EA /* tabinit.h in Headers */,
+				D55AACC026E8FB3D00DD41EA /* tables.h in Headers */,
+				D55AACC126E8FB3D00DD41EA /* util.h in Headers */,
+				D55AACC226E8FB3D00DD41EA /* vbrquantize.h in Headers */,
+				D55AACC326E8FB3D00DD41EA /* VbrTag.h in Headers */,
+				D55AACC426E8FB3D00DD41EA /* version.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AACEB26E8FBD100DD41EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AACFA26E8FBD100DD41EA /* bitstream.h in Headers */,
+				D55AACEE26E8FBD100DD41EA /* common.h in Headers */,
+				D55AAD0E26E8FBD100DD41EA /* config.h in Headers */,
+				D55AACEF26E8FBD100DD41EA /* dct64_i386.h in Headers */,
+				D55AACF026E8FBD100DD41EA /* decode_i386.h in Headers */,
+				D55AACFB26E8FBD100DD41EA /* encoder.h in Headers */,
+				D55AACFC26E8FBD100DD41EA /* fft.h in Headers */,
+				D55AACFD26E8FBD100DD41EA /* gain_analysis.h in Headers */,
+				D55AACF126E8FBD100DD41EA /* huffman.h in Headers */,
+				D55AACFE26E8FBD100DD41EA /* id3tag.h in Headers */,
+				D55AACF226E8FBD100DD41EA /* interface.h in Headers */,
+				D55AACF326E8FBD100DD41EA /* l2tables.h in Headers */,
+				D55AACFF26E8FBD100DD41EA /* l3side.h in Headers */,
+				D55AAD0026E8FBD100DD41EA /* lame-analysis.h in Headers */,
+				D55AACED26E8FBD100DD41EA /* lame.h in Headers */,
+				D55AAD0126E8FBD100DD41EA /* lame_global_flags.h in Headers */,
+				D55AACEC26E8FBD100DD41EA /* LAME_Prefix.pch in Headers */,
+				D55AACF426E8FBD100DD41EA /* layer1.h in Headers */,
+				D55AACF526E8FBD100DD41EA /* layer2.h in Headers */,
+				D55AACF626E8FBD100DD41EA /* layer3.h in Headers */,
+				D55AAD0226E8FBD100DD41EA /* machine.h in Headers */,
+				D55AACF726E8FBD100DD41EA /* mpg123.h in Headers */,
+				D55AACF826E8FBD100DD41EA /* mpglib.h in Headers */,
+				D55AAD0326E8FBD100DD41EA /* newmdct.h in Headers */,
+				D55AAD0426E8FBD100DD41EA /* psymodel.h in Headers */,
+				D55AAD0526E8FBD100DD41EA /* quantize.h in Headers */,
+				D55AAD0626E8FBD100DD41EA /* quantize_pvt.h in Headers */,
+				D55AAD0726E8FBD100DD41EA /* reservoir.h in Headers */,
+				D55AAD0826E8FBD100DD41EA /* set_get.h in Headers */,
+				D55AACF926E8FBD100DD41EA /* tabinit.h in Headers */,
+				D55AAD0926E8FBD100DD41EA /* tables.h in Headers */,
+				D55AAD0A26E8FBD100DD41EA /* util.h in Headers */,
+				D55AAD0B26E8FBD100DD41EA /* vbrquantize.h in Headers */,
+				D55AAD0C26E8FBD100DD41EA /* VbrTag.h in Headers */,
+				D55AAD0D26E8FBD100DD41EA /* version.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +676,63 @@
 			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D55AAC5826E8F9C100DD41EA /* LAME-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55AAC9C26E8F9C100DD41EA /* Build configuration list for PBXNativeTarget "LAME-iOS" */;
+			buildPhases = (
+				D55AAC5926E8F9C100DD41EA /* Headers */,
+				D55AAC7D26E8F9C100DD41EA /* Resources */,
+				D55AAC7E26E8F9C100DD41EA /* Sources */,
+				D55AAC9B26E8F9C100DD41EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LAME-iOS";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = LAME;
+			productReference = D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D55AACA126E8FB3D00DD41EA /* LAME-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55AACE526E8FB3D00DD41EA /* Build configuration list for PBXNativeTarget "LAME-tvOS" */;
+			buildPhases = (
+				D55AACA226E8FB3D00DD41EA /* Headers */,
+				D55AACC626E8FB3D00DD41EA /* Resources */,
+				D55AACC726E8FB3D00DD41EA /* Sources */,
+				D55AACE426E8FB3D00DD41EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LAME-tvOS";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = LAME;
+			productReference = D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D55AACEA26E8FBD100DD41EA /* LAME-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55AAD2E26E8FBD100DD41EA /* Build configuration list for PBXNativeTarget "LAME-watchOS" */;
+			buildPhases = (
+				D55AACEB26E8FBD100DD41EA /* Headers */,
+				D55AAD0F26E8FBD100DD41EA /* Resources */,
+				D55AAD1026E8FBD100DD41EA /* Sources */,
+				D55AAD2D26E8FBD100DD41EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LAME-watchOS";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = LAME;
+			productReference = D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,12 +754,36 @@
 			projectRoot = "";
 			targets = (
 				8D07F2BC0486CC7A007CD1D0 /* LAME-macOS */,
+				D55AAC5826E8F9C100DD41EA /* LAME-iOS */,
+				D55AACA126E8FB3D00DD41EA /* LAME-tvOS */,
+				D55AACEA26E8FBD100DD41EA /* LAME-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D07F2BF0486CC7A007CD1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAC7D26E8F9C100DD41EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AACC626E8FB3D00DD41EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAD0F26E8FBD100DD41EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,20 +797,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8CC0F909A39A5E001379B8 /* bitstream.c in Sources */,
 				EA8CC0A509A39A55001379B8 /* common.c in Sources */,
 				EA8CC0A709A39A55001379B8 /* dct64_i386.c in Sources */,
 				EA8CC0A909A39A55001379B8 /* decode_i386.c in Sources */,
-				EA8CC0AD09A39A55001379B8 /* interface.c in Sources */,
-				EA8CC0B009A39A55001379B8 /* layer1.c in Sources */,
-				EA8CC0B209A39A55001379B8 /* layer2.c in Sources */,
-				EA8CC0B409A39A55001379B8 /* layer3.c in Sources */,
-				EA8CC0BD09A39A55001379B8 /* tabinit.c in Sources */,
-				EA8CC0F909A39A5E001379B8 /* bitstream.c in Sources */,
 				EA8CC0FC09A39A5E001379B8 /* encoder.c in Sources */,
 				EA8CC0FE09A39A5E001379B8 /* fft.c in Sources */,
 				EA8CC10009A39A5E001379B8 /* gain_analysis.c in Sources */,
 				EA8CC10C09A39A5E001379B8 /* id3tag.c in Sources */,
+				EA8CC0AD09A39A55001379B8 /* interface.c in Sources */,
 				EA8CC11009A39A5E001379B8 /* lame.c in Sources */,
+				EA8CC0B009A39A55001379B8 /* layer1.c in Sources */,
+				EA8CC0B209A39A55001379B8 /* layer2.c in Sources */,
+				EA8CC0B409A39A55001379B8 /* layer3.c in Sources */,
 				EA8CC11709A39A5E001379B8 /* mpglib_interface.c in Sources */,
 				EA8CC11809A39A5E001379B8 /* newmdct.c in Sources */,
 				EA8CC11A09A39A5E001379B8 /* presets.c in Sources */,
@@ -396,12 +818,118 @@
 				EA8CC11F09A39A5E001379B8 /* quantize_pvt.c in Sources */,
 				EA8CC12109A39A5E001379B8 /* reservoir.c in Sources */,
 				EA8CC12309A39A5E001379B8 /* set_get.c in Sources */,
+				EA8CC0BD09A39A55001379B8 /* tabinit.c in Sources */,
 				EA8CC12509A39A5E001379B8 /* tables.c in Sources */,
 				EA8CC12709A39A5E001379B8 /* takehiro.c in Sources */,
 				EA8CC12809A39A5E001379B8 /* util.c in Sources */,
 				EA8CC12A09A39A5E001379B8 /* vbrquantize.c in Sources */,
 				EA8CC12C09A39A5E001379B8 /* VbrTag.c in Sources */,
 				EA8CC12E09A39A5E001379B8 /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAC7E26E8F9C100DD41EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AAC8726E8F9C100DD41EA /* bitstream.c in Sources */,
+				D55AAC7F26E8F9C100DD41EA /* common.c in Sources */,
+				D55AAC8026E8F9C100DD41EA /* dct64_i386.c in Sources */,
+				D55AAC8126E8F9C100DD41EA /* decode_i386.c in Sources */,
+				D55AAC8826E8F9C100DD41EA /* encoder.c in Sources */,
+				D55AAC8926E8F9C100DD41EA /* fft.c in Sources */,
+				D55AAC8A26E8F9C100DD41EA /* gain_analysis.c in Sources */,
+				D55AAC8B26E8F9C100DD41EA /* id3tag.c in Sources */,
+				D55AAC8226E8F9C100DD41EA /* interface.c in Sources */,
+				D55AAC8C26E8F9C100DD41EA /* lame.c in Sources */,
+				D55AAC8326E8F9C100DD41EA /* layer1.c in Sources */,
+				D55AAC8426E8F9C100DD41EA /* layer2.c in Sources */,
+				D55AAC8526E8F9C100DD41EA /* layer3.c in Sources */,
+				D55AAC8D26E8F9C100DD41EA /* mpglib_interface.c in Sources */,
+				D55AAC8E26E8F9C100DD41EA /* newmdct.c in Sources */,
+				D55AAC8F26E8F9C100DD41EA /* presets.c in Sources */,
+				D55AAC9026E8F9C100DD41EA /* psymodel.c in Sources */,
+				D55AAC9126E8F9C100DD41EA /* quantize.c in Sources */,
+				D55AAC9226E8F9C100DD41EA /* quantize_pvt.c in Sources */,
+				D55AAC9326E8F9C100DD41EA /* reservoir.c in Sources */,
+				D55AAC9426E8F9C100DD41EA /* set_get.c in Sources */,
+				D55AAC8626E8F9C100DD41EA /* tabinit.c in Sources */,
+				D55AAC9526E8F9C100DD41EA /* tables.c in Sources */,
+				D55AAC9626E8F9C100DD41EA /* takehiro.c in Sources */,
+				D55AAC9726E8F9C100DD41EA /* util.c in Sources */,
+				D55AAC9826E8F9C100DD41EA /* vbrquantize.c in Sources */,
+				D55AAC9926E8F9C100DD41EA /* VbrTag.c in Sources */,
+				D55AAC9A26E8F9C100DD41EA /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AACC726E8FB3D00DD41EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AACD026E8FB3D00DD41EA /* bitstream.c in Sources */,
+				D55AACC826E8FB3D00DD41EA /* common.c in Sources */,
+				D55AACC926E8FB3D00DD41EA /* dct64_i386.c in Sources */,
+				D55AACCA26E8FB3D00DD41EA /* decode_i386.c in Sources */,
+				D55AACD126E8FB3D00DD41EA /* encoder.c in Sources */,
+				D55AACD226E8FB3D00DD41EA /* fft.c in Sources */,
+				D55AACD326E8FB3D00DD41EA /* gain_analysis.c in Sources */,
+				D55AACD426E8FB3D00DD41EA /* id3tag.c in Sources */,
+				D55AACCB26E8FB3D00DD41EA /* interface.c in Sources */,
+				D55AACD526E8FB3D00DD41EA /* lame.c in Sources */,
+				D55AACCC26E8FB3D00DD41EA /* layer1.c in Sources */,
+				D55AACCD26E8FB3D00DD41EA /* layer2.c in Sources */,
+				D55AACCE26E8FB3D00DD41EA /* layer3.c in Sources */,
+				D55AACD626E8FB3D00DD41EA /* mpglib_interface.c in Sources */,
+				D55AACD726E8FB3D00DD41EA /* newmdct.c in Sources */,
+				D55AACD826E8FB3D00DD41EA /* presets.c in Sources */,
+				D55AACD926E8FB3D00DD41EA /* psymodel.c in Sources */,
+				D55AACDA26E8FB3D00DD41EA /* quantize.c in Sources */,
+				D55AACDB26E8FB3D00DD41EA /* quantize_pvt.c in Sources */,
+				D55AACDC26E8FB3D00DD41EA /* reservoir.c in Sources */,
+				D55AACDD26E8FB3D00DD41EA /* set_get.c in Sources */,
+				D55AACCF26E8FB3D00DD41EA /* tabinit.c in Sources */,
+				D55AACDE26E8FB3D00DD41EA /* tables.c in Sources */,
+				D55AACDF26E8FB3D00DD41EA /* takehiro.c in Sources */,
+				D55AACE026E8FB3D00DD41EA /* util.c in Sources */,
+				D55AACE126E8FB3D00DD41EA /* vbrquantize.c in Sources */,
+				D55AACE226E8FB3D00DD41EA /* VbrTag.c in Sources */,
+				D55AACE326E8FB3D00DD41EA /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55AAD1026E8FBD100DD41EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55AAD1926E8FBD100DD41EA /* bitstream.c in Sources */,
+				D55AAD1126E8FBD100DD41EA /* common.c in Sources */,
+				D55AAD1226E8FBD100DD41EA /* dct64_i386.c in Sources */,
+				D55AAD1326E8FBD100DD41EA /* decode_i386.c in Sources */,
+				D55AAD1A26E8FBD100DD41EA /* encoder.c in Sources */,
+				D55AAD1B26E8FBD100DD41EA /* fft.c in Sources */,
+				D55AAD1C26E8FBD100DD41EA /* gain_analysis.c in Sources */,
+				D55AAD1D26E8FBD100DD41EA /* id3tag.c in Sources */,
+				D55AAD1426E8FBD100DD41EA /* interface.c in Sources */,
+				D55AAD1E26E8FBD100DD41EA /* lame.c in Sources */,
+				D55AAD1526E8FBD100DD41EA /* layer1.c in Sources */,
+				D55AAD1626E8FBD100DD41EA /* layer2.c in Sources */,
+				D55AAD1726E8FBD100DD41EA /* layer3.c in Sources */,
+				D55AAD1F26E8FBD100DD41EA /* mpglib_interface.c in Sources */,
+				D55AAD2026E8FBD100DD41EA /* newmdct.c in Sources */,
+				D55AAD2126E8FBD100DD41EA /* presets.c in Sources */,
+				D55AAD2226E8FBD100DD41EA /* psymodel.c in Sources */,
+				D55AAD2326E8FBD100DD41EA /* quantize.c in Sources */,
+				D55AAD2426E8FBD100DD41EA /* quantize_pvt.c in Sources */,
+				D55AAD2526E8FBD100DD41EA /* reservoir.c in Sources */,
+				D55AAD2626E8FBD100DD41EA /* set_get.c in Sources */,
+				D55AAD1826E8FBD100DD41EA /* tabinit.c in Sources */,
+				D55AAD2726E8FBD100DD41EA /* tables.c in Sources */,
+				D55AAD2826E8FBD100DD41EA /* takehiro.c in Sources */,
+				D55AAD2926E8FBD100DD41EA /* util.c in Sources */,
+				D55AAD2A26E8FBD100DD41EA /* vbrquantize.c in Sources */,
+				D55AAD2B26E8FBD100DD41EA /* VbrTag.c in Sources */,
+				D55AAD2C26E8FBD100DD41EA /* version.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +961,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -471,7 +998,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -500,6 +1026,56 @@
 			};
 			name = Release;
 		};
+		D55AAC9D26E8F9C100DD41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D55AAC9E26E8F9C100DD41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D55AACE626E8FB3D00DD41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+			};
+			name = Debug;
+		};
+		D55AACE726E8FB3D00DD41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+			};
+			name = Release;
+		};
+		D55AAD2F26E8FBD100DD41EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+			};
+			name = Debug;
+		};
+		D55AAD3026E8FBD100DD41EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +1093,33 @@
 			buildConfigurations = (
 				4FADC24708B4156D00ABE55E /* Debug */,
 				4FADC24808B4156D00ABE55E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55AAC9C26E8F9C100DD41EA /* Build configuration list for PBXNativeTarget "LAME-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55AAC9D26E8F9C100DD41EA /* Debug */,
+				D55AAC9E26E8F9C100DD41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55AACE526E8FB3D00DD41EA /* Build configuration list for PBXNativeTarget "LAME-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55AACE626E8FB3D00DD41EA /* Debug */,
+				D55AACE726E8FB3D00DD41EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55AAD2E26E8FBD100DD41EA /* Build configuration list for PBXNativeTarget "LAME-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55AAD2F26E8FBD100DD41EA /* Debug */,
+				D55AAD3026E8FBD100DD41EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
