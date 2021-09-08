@@ -10,7 +10,7 @@
 /* #undef ABORTFP */
 
 /* Define if building universal (internal helper macro) */
-/* #undef AC_APPLE_UNIVERSAL_BUILD */
+#define AC_APPLE_UNIVERSAL_BUILD 1
 
 /* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
    systems. This function is required for `alloca.c' support on those systems.
@@ -57,13 +57,13 @@
 /* add ieee754_float32_t type */
 /* #undef HAVE_IEEE754_FLOAT32_T */
 #ifndef HAVE_IEEE754_FLOAT32_T
-	typedef float ieee754_float32_t;
+	typedef Float32 ieee754_float32_t;
 #endif
 
 /* add ieee754_float64_t type */
 /* #undef HAVE_IEEE754_FLOAT64_T */
 #ifndef HAVE_IEEE754_FLOAT64_T
-	typedef double ieee754_float64_t;
+	typedef Float64 ieee754_float64_t;
 #endif
 
 /* system has 80 bit floats */
@@ -72,7 +72,7 @@
 /* add ieee854_float80_t type */
 /* #undef HAVE_IEEE854_FLOAT80_T */
 #ifndef HAVE_IEEE854_FLOAT80_T
-	typedef long double ieee854_float80_t;
+	typedef Float80 ieee854_float80_t;
 #endif
 
 /* add int16_t type */
@@ -196,7 +196,7 @@
 #define HAVE_UNISTD_H 1
 
 /* Define if SSE intrinsics work. */
-#define HAVE_XMMINTRIN_H 1
+#undef HAVE_XMMINTRIN_H
 
 /* Define as const if the declaration of iconv() needs const. */
 #define ICONV_CONST 
@@ -214,7 +214,7 @@
 /* #undef MMX_choose_table */
 
 /* build without hooks for analyzer */
-/* #undef NOANALYSIS */
+ #define NOANALYSIS 1
 
 /* Name of package */
 #define PACKAGE "lame"
