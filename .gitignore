@@ -22,13 +22,13 @@
 # lame source
 
 ## Unneeded subprojects
-/ACM
+/ACM/*
 /debian
-/Dll
-/dshow
-/frontend
-/misc
-/vc_solution
+/Dll/*
+/dshow/*
+/frontend/*
+/misc/*
+/vc_solution/*
 /README.WINGTK
 /USAGE
 
@@ -49,12 +49,15 @@
 /TODO
 
 ## config temp
-/conftest
-/conftest.*
+/conftest*
+/config.log
+/config.status
 /stamp-h1
-/Makefile
+**/Makefile
+**/.deps/
 
 ## config
+!/*/Makefile.in
 !/install-sh
 !/lame.spec.in
 !/ltmain.sh
@@ -63,4 +66,5 @@
 /compile
 /depcomp
 /Makefile.*
+!/Makefile.in
 /missing
