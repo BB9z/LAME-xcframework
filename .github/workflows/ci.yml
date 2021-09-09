@@ -1,0 +1,13 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: XCFramework Make
+      run: |
+        cd macosx
+        ./make-xcframework.sh
