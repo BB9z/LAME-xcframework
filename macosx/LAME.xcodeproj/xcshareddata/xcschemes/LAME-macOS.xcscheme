@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8D07F2BC0486CC7A007CD1D0"
-               BuildableName = "LAME-macOS.framework"
+               BuildableName = "LAME.framework"
                BlueprintName = "LAME-macOS"
                ReferencedContainer = "container:LAME.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D07F2BC0486CC7A007CD1D0"
-            BuildableName = "LAME-macOS.framework"
+            BuildableName = "LAME.framework"
             BlueprintName = "LAME-macOS"
             ReferencedContainer = "container:LAME.xcodeproj">
          </BuildableReference>

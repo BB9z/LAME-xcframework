@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 42;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -264,11 +264,11 @@
 /* Begin PBXFileReference section */
 		32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAME_Prefix.pch; sourceTree = "<group>"; };
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Lame-Framework.xcconfig"; sourceTree = "<group>"; };
-		D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LAME-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AAC9F26E8F9C100DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AACE826E8FB3D00DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55AAD3126E8FBD100DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA498C8C0DE5E37B00250F0E /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../config.h; sourceTree = "<group>"; };
 		EA8CC08709A39A49001379B8 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lame.h; path = ../include/lame.h; sourceTree = "<group>"; };
 		EA8CC08A09A39A55001379B8 /* common.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
@@ -368,10 +368,10 @@
 		034768DDFF38A45A11DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */,
-				8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */,
-				D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */,
-				D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */,
+				D55AAC9F26E8F9C100DD41EA /* LAME.framework */,
+				8D07F2C80486CC7A007CD1D0 /* LAME.framework */,
+				D55AACE826E8FB3D00DD41EA /* LAME.framework */,
+				D55AAD3126E8FBD100DD41EA /* LAME.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -690,7 +690,7 @@
 			name = "LAME-macOS";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = LAME;
-			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME-macOS.framework */;
+			productReference = 8D07F2C80486CC7A007CD1D0 /* LAME.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D55AAC5826E8F9C100DD41EA /* LAME-iOS */ = {
@@ -709,7 +709,7 @@
 			name = "LAME-iOS";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = LAME;
-			productReference = D55AAC9F26E8F9C100DD41EA /* LAME-iOS.framework */;
+			productReference = D55AAC9F26E8F9C100DD41EA /* LAME.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D55AACA126E8FB3D00DD41EA /* LAME-tvOS */ = {
@@ -728,7 +728,7 @@
 			name = "LAME-tvOS";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = LAME;
-			productReference = D55AACE826E8FB3D00DD41EA /* LAME-tvOS.framework */;
+			productReference = D55AACE826E8FB3D00DD41EA /* LAME.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D55AACEA26E8FBD100DD41EA /* LAME-watchOS */ = {
@@ -747,7 +747,7 @@
 			name = "LAME-watchOS";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = LAME;
-			productReference = D55AAD3126E8FBD100DD41EA /* LAME-watchOS.framework */;
+			productReference = D55AAD3126E8FBD100DD41EA /* LAME.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -962,11 +962,6 @@
 		4FADC24308B4156D00ABE55E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = "LAME-macOS";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -974,11 +969,6 @@
 		4FADC24408B4156D00ABE55E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				PRODUCT_NAME = "LAME-macOS";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1012,10 +1002,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_OUTPUT_FORMAT = binary;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -1049,10 +1042,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_OUTPUT_FORMAT = binary;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -1060,50 +1056,48 @@
 		D55AAC9D26E8F9C100DD41EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
 		D55AAC9E26E8F9C100DD41EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
 		D55AACE626E8FB3D00DD41EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
 		};
 		D55AACE726E8FB3D00DD41EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
 		D55AAD2F26E8FBD100DD41EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
 		D55AAD3026E8FBD100DD41EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
 		};

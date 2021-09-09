@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D55AAC5826E8F9C100DD41EA"
-               BuildableName = "LAME-iOS.framework"
+               BuildableName = "LAME.framework"
                BlueprintName = "LAME-iOS"
                ReferencedContainer = "container:LAME.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D55AAC5826E8F9C100DD41EA"
-            BuildableName = "LAME-iOS.framework"
+            BuildableName = "LAME.framework"
             BlueprintName = "LAME-iOS"
             ReferencedContainer = "container:LAME.xcodeproj">
          </BuildableReference>

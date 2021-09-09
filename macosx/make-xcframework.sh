@@ -2,6 +2,13 @@
 set -euo pipefail
 echo "$PWD"
 
+if [ -d "LAME.xcframework" ]; then
+    echo "Remove previous result."
+    rm -r "LAME.xcframework"
+else
+    echo "No previous build, go on."
+fi
+
 xcodebuild archive \
     -scheme LAME-macOS \
     -destination "generic/platform=macOS" \
@@ -59,12 +66,12 @@ xcodebuild archive \
     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
 xcodebuild -create-xcframework \
-    -framework "build/macOS.xcarchive/Products/Library/Frameworks/LAME-macOS.framework" \
-    -framework "build/iOS.xcarchive/Products/Library/Frameworks/LAME-iOS.framework" \
-    -framework "build/iOS-Simulator.xcarchive/Products/Library/Frameworks/LAME-iOS.framework" \
-    -framework "build/Catalyst.xcarchive/Products/Library/Frameworks/LAME-iOS.framework" \
-    -framework "build/tvOS.xcarchive/Products/Library/Frameworks/LAME-tvOS.framework" \
-    -framework "build/tvOS-Simulator.xcarchive/Products/Library/Frameworks/LAME-tvOS.framework" \
-    -framework "build/watchOS.xcarchive/Products/Library/Frameworks/LAME-watchOS.framework" \
-    -framework "build/watchOS-Simulator.xcarchive/Products/Library/Frameworks/LAME-watchOS.framework" \
+    -framework "build/macOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/iOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/iOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/Catalyst.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/tvOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/tvOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/watchOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/watchOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
     -output "LAME.xcframework"

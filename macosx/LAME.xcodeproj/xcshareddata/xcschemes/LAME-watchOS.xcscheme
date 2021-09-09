@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D55AACEA26E8FBD100DD41EA"
-               BuildableName = "LAME-watchOS.framework"
+               BuildableName = "LAME.framework"
                BlueprintName = "LAME-watchOS"
                ReferencedContainer = "container:LAME.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D55AACEA26E8FBD100DD41EA"
-            BuildableName = "LAME-watchOS.framework"
+            BuildableName = "LAME.framework"
             BlueprintName = "LAME-watchOS"
             ReferencedContainer = "container:LAME.xcodeproj">
          </BuildableReference>
