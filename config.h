@@ -1,6 +1,14 @@
-/* config.h.  Generated from config.h.in by configure.  */
-/* config.h.in.  Generated from configure.in by autoheader.  */
+/*
+ config.h
 
+ Generated from config.h.in by configure. Then modified for Apple platforms.
+
+ Copyright © 2021 BB9z.
+ https://github.com/BB9z/LAME-xcframework
+
+ The MIT License
+ https://opensource.org/licenses/MIT
+ */
 
 #ifndef LAME_CONFIG_H
 #define LAME_CONFIG_H
