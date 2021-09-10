@@ -10,6 +10,14 @@
 
 This project aims to archive [LAME](https://lame.sourceforge.io) into the xcframework format supports all Apple platforms. It also supports integration using Swift Package Manager for convenience.
 
+## 版本信息
+
+## Version Details
+
+LAME.xcframework | Build with   | macOS  | iOS  | tvOS | watchOS
+-----------------|--------------|--------|------|------|--------
+3.100.0          | Xcode 12.5.1 | 10.10+ | 9.0+ | 9.0+ | 2.0+
+
 ## 集成
 
 You can also use [GitHub source](https://github.com/bb9z/LAME-xcframework) to install.
