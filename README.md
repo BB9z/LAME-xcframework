@@ -2,7 +2,7 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.3+-F05138.svg?style=flat-square)](https://swift.org)
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-F05138.svg?style=flat-square)](https://swift.org/package-manager)
-[![Build Status](https://img.shields.io/github/workflow/status/bb9z/LAME-xcframework/CI?style=flat-square&colorA=555555&colorB=F05138)](https://github.com/bb9z/LAME-xcframework/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/bb9z/LAME-xcframework/ci.yml?branch=main&style=flat-square&colorA=555555&colorB=F05138)](https://github.com/bb9z/LAME-xcframework/actions)
 [![gitee 镜像](https://img.shields.io/badge/%E9%95%9C%E5%83%8F-gitee-C61E22.svg?style=flat-square)](https://gitee.com/bb9z/LAME-xcframework)
 [![GitHub Source](https://img.shields.io/badge/Source-GitHub-24292F.svg?style=flat-square)](https://github.com/bb9z/LAME-xcframework)
 
