@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -452,8 +452,8 @@
 			isa = PBXGroup;
 			children = (
 				08FB77ACFE841707C02AAC07 /* Source */,
-				089C1665FE841158C02AAC07 /* Resources */,
 				034768DDFF38A45A11DB9C8B /* Products */,
+				089C1665FE841158C02AAC07 /* Resources */,
 			);
 			name = LAME;
 			sourceTree = "<group>";
@@ -920,7 +920,7 @@
 				};
 			};
 			buildConfigurationList = 4FADC24608B4156D00ABE55E /* Build configuration list for PBXProject "LAME" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
