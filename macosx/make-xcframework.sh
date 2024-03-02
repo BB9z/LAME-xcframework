@@ -65,6 +65,18 @@ xcodebuild archive \
     -archivePath "build/watchOS-Simulator" \
     SKIP_INSTALL=NO
 
+xcodebuild archive \
+    -scheme LAME-visionOS \
+    -destination "generic/platform=visionOS" \
+    -archivePath "build/visonOS" \
+    SKIP_INSTALL=NO
+
+xcodebuild archive \
+    -scheme LAME-visionOS \
+    -destination "generic/platform=visionOS Simulator" \
+    -archivePath "build/visonOS-Simulator" \
+    SKIP_INSTALL=NO
+
 xcodebuild -create-xcframework \
     -framework "build/macOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
     -framework "build/iOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
@@ -74,4 +86,6 @@ xcodebuild -create-xcframework \
     -framework "build/tvOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
     -framework "build/watchOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
     -framework "build/watchOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/visonOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
+    -framework "build/visonOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
     -output "LAME.xcframework"
