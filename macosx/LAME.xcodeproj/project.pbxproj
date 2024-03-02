@@ -329,6 +329,7 @@
 		8D07F2C70486CC7A007CD1D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50E03052B9372D90066CB31 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50E032E2B937A410066CB31 /* Products */ = {isa = PBXFileReference; lastKnownFileType = text; name = Products; path = ..; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Lame-Framework.xcconfig"; sourceTree = "<group>"; };
 		D55AAC9F26E8F9C100DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55AACE826E8FB3D00DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -452,8 +453,9 @@
 			isa = PBXGroup;
 			children = (
 				08FB77ACFE841707C02AAC07 /* Source */,
-				034768DDFF38A45A11DB9C8B /* Products */,
 				089C1665FE841158C02AAC07 /* Resources */,
+				D50E032E2B937A410066CB31 /* Products */,
+				034768DDFF38A45A11DB9C8B /* Products */,
 			);
 			name = LAME;
 			sourceTree = "<group>";
