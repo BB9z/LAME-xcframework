@@ -2,6 +2,7 @@
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.3~5.9-F05138.svg?style=flat-square)](https://swift.org)
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-F05138.svg?style=flat-square)](https://swift.org/package-manager)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LAME-xcframework.svg?style=flat-square&colorA=555555&colorB=F05138)](https://cocoapods.org/pods/LAME-xcframework)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/bb9z/LAME-xcframework/ci.yml?branch=main&style=flat-square&colorA=555555&colorB=F05138)](https://github.com/bb9z/LAME-xcframework/actions)
 [![gitee 镜像](https://img.shields.io/badge/%E9%95%9C%E5%83%8F-gitee-C61E22.svg?style=flat-square)](https://gitee.com/bb9z/LAME-xcframework)
 [![GitHub Source](https://img.shields.io/badge/Source-GitHub-24292F.svg?style=flat-square)](https://github.com/bb9z/LAME-xcframework)
@@ -46,6 +47,12 @@ dependencies: [
 ])
 ```
 
+### CocoaPods
+
+```ruby
+pod 'LAME-xcframework', '~> 3.100'
+```
+
 ### 手动
 
 拉取仓库后自行打包 xcframework（详见下方），并将 `LAME.xcframework` 加入到你的项目中。
@@ -76,6 +83,12 @@ Then add LAME to your target dependencies, like this:
 ```
 
 > Tips: 中国大陆用户建议使用 [gitee 镜像](https://gitee.com/bb9z/LAME-xcframework)，安装更稳定。
+
+### CocoaPods
+
+```ruby
+pod 'LAME-xcframework', '~> 3.100'
+```
 
 ### Manually
 
