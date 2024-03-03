@@ -1,14 +1,14 @@
-# LAME.xcframework
+# ![LAME.xcframework](https://repository-images.githubusercontent.com/404309760/90d67cd6-bfca-4180-9055-e60f92d206af)
 
-[![Swift Version](https://img.shields.io/badge/Swift-5.3+-F05138.svg?style=flat-square)](https://swift.org)
+[![Swift Version](https://img.shields.io/badge/Swift-5.3~5.9-F05138.svg?style=flat-square)](https://swift.org)
 [![Swift Package Manager](https://img.shields.io/badge/spm-compatible-F05138.svg?style=flat-square)](https://swift.org/package-manager)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/bb9z/LAME-xcframework/ci.yml?branch=main&style=flat-square&colorA=555555&colorB=F05138)](https://github.com/bb9z/LAME-xcframework/actions)
 [![gitee 镜像](https://img.shields.io/badge/%E9%95%9C%E5%83%8F-gitee-C61E22.svg?style=flat-square)](https://gitee.com/bb9z/LAME-xcframework)
 [![GitHub Source](https://img.shields.io/badge/Source-GitHub-24292F.svg?style=flat-square)](https://github.com/bb9z/LAME-xcframework)
 
-这个项目旨在将 [LAME](https://lame.sourceforge.io) 打包成 Apple 各平台通用的 xcframework 格式，并支持使用 Swift Package Manager 进行便捷的集成。
+这个项目旨在将 [LAME](https://lame.sourceforge.io) 打包成 Apple 各平台通用的 xcframework 格式，并支持使用 Swift Package Manager 或 CocoaPods 进行便捷的集成。
 
-This project aims to archive [LAME](https://lame.sourceforge.io) into the xcframework format supports all Apple platforms. It also supports integration using Swift Package Manager for convenience.
+This project aims to archive [LAME](https://lame.sourceforge.io) into the xcframework format supports all Apple platforms. It also supports integration using Swift Package Manager or CocoaPods for convenience.
 
 ## 版本信息
 
@@ -16,8 +16,8 @@ This project aims to archive [LAME](https://lame.sourceforge.io) into the xcfram
 
 LAME.xcframework | Build with   | macOS  | iOS   | tvOS  | watchOS | visionOS
 -----------------|--------------|--------|-------|-------|---------|---------
-3.100.0          | Xcode 12.5.1 | 10.10+ |  9.0+ |  9.0+ | 2.0+    | NA
 3.100.1          | Xcode 15.2   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
+3.100.0          | Xcode 12.5.1 | 10.10+ |  9.0+ |  9.0+ | 2.0+    | NA
 
 ## 集成
 
@@ -25,8 +25,26 @@ You can also use [GitHub source](https://github.com/bb9z/LAME-xcframework) to in
 
 ### Swift Package Manager
 
-1. Xcode 菜单: File -> Swift Packages -> Add Package Dependenc
+通过 Xcode 菜单：
+
+1. File -> Swift Packages -> Add Package Dependenc
 2. 输入 https://github.com/bb9z/LAME-xcframework
+
+或者在 Package.swift 中添加 LAME 依赖：
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/BB9z/LAME-xcframework.git", .upToNextMajor(from: "3.100.1"))
+]
+```
+
+然后在你的 target 中添加 LAME 依赖：
+
+```swift
+.target(name: "YourTarget", dependencies: [
+    .product(name: "LAME", package: "LAME-xcframework"),
+])
+```
 
 ### 手动
 
@@ -34,12 +52,30 @@ You can also use [GitHub source](https://github.com/bb9z/LAME-xcframework) to in
 
 ## Installation
 
-中国大陆用户可以使用 [gitee 镜像](https://gitee.com/bb9z/LAME-xcframework) 加快安装。
-
 ### Swift Package Manager
 
-1. Xcode Menu: File -> Swift Packages -> Add Package Dependency...
-2. Input https://github.com/bb9z/LAME-xcframework
+Through Xcode menu:
+
+1. File -> Swift Packages -> Add Package Dependency...
+2. Enter URL https://github.com/BB9z/LAME-xcframework
+
+Through Package.swift, add LAME as a dependency:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/BB9z/LAME-xcframework.git", .upToNextMajor(from: "3.100.1"))
+]
+```
+
+Then add LAME to your target dependencies, like this:
+
+```swift
+.target(name: "YourTarget", dependencies: [
+    .product(name: "LAME", package: "LAME-xcframework"),
+])
+```
+
+> Tips: 中国大陆用户建议使用 [gitee 镜像](https://gitee.com/bb9z/LAME-xcframework)，安装更稳定。
 
 ### Manually
 
