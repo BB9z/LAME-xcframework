@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/BB9z/LAME-xcframework"
   s.license      = { :type => "LGPL", :file => "LICENSE" }
   s.author       = 'BB9z'
-  s.source       = { :http => "https://github.com/BB9z/LAME-xcframework/releases/download/3.100.1/LAME.xcframework.zip", :sha256 => "a071110cf04b0ef44da54092462361270426373341733b2dbcf748a035321c40" }
+  s.source       = { :http => "https://github.com/BB9z/LAME-xcframework/releases/download/3.100.1/LAME.xcframework.zip", :sha256 => "cc45eb59d17ec4c38f75bb054d01faca3aaefeeaee544ca0c7a07e6820898c0f" }
 
   s.ios.deployment_target  = '12.0'
   s.osx.deployment_target  = '10.13'

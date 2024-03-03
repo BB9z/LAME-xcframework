@@ -18,14 +18,14 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(
-            name: "LAME",
-            path: "macosx/LAME.xcframework"
-        ),
 //        .binaryTarget(
 //            name: "LAME",
-//            url: "https://github.com/BB9z/LAME-xcframework/releases/download/3.100.1/LAME.xcframework.zip",
-//            checksum: "a071110cf04b0ef44da54092462361270426373341733b2dbcf748a035321c40"
-//        )
+//            path: "macosx/LAME.xcframework"
+//        ),
+        .binaryTarget(
+            name: "LAME",
+            url: "https://github.com/BB9z/LAME-xcframework/releases/download/3.100.1/LAME.xcframework.zip",
+            checksum: "cc45eb59d17ec4c38f75bb054d01faca3aaefeeaee544ca0c7a07e6820898c0f"
+        )
     ]
 )
