@@ -12,11 +12,7 @@ readonly ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
 rm -rf "$ROOT_DIR/LAME.xcframework" "$ROOT_DIR/LAME.xcframework.zip"
 
 cd "$ROOT_DIR/macosx"
-if [ -x "$(command -v xcpretty)" ]; then
-    sh ./make-xcframework.sh | xcpretty
-else
-    sh ./make-xcframework.sh
-fi
+sh ./make-xcframework.sh
 
 cd "$ROOT_DIR"
 

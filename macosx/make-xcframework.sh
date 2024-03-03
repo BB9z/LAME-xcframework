@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/bin/zsh
 
-# The script to create LAME.xcframework
+# Build all platform targets and package them into the xcframework.
+# Set `B9_BUILD_VISION_OS` environment variable to 0 can disable building for visionOS.
+#
 # Copyright © 2021, 2024 BB9z.
 # https://github.com/BB9z/LAME-xcframework
 #
@@ -8,7 +10,59 @@
 # https://opensource.org/licenses/MIT
 
 set -euo pipefail
+
+# Check if a variable is empty or 0 or false
+#
+# Return: 0 if variable is not empty or 0 or false
+#
+# Usage:
+#   if [[ $(check_var "$test_var") == 0 ]]; then
+#       echo "Variable is not 0, false, or empty"
+#   else
+#       echo "Variable is 0, false, or empty"
+#   fi
+checkVar() {
+    local var_value="$1"
+    if [[ -z "$var_value" || "$var_value" == "0" || "${var_value:l}" == "false" ]]; then
+        echo "1"
+    else
+        echo "0"
+    fi
+}
+
+function _xcbuild() {
+    scheme=$1
+    destination=$2
+    archivePath=$3
+
+    echo "\nBuilding $scheme for $destination..." >&2
+
+    xcodebuild archive \
+        -scheme $scheme \
+        -destination $destination \
+        -archivePath $archivePath \
+        SKIP_INSTALL=NO
+}
+
+function xcbuild() {
+    if ! command -v xcbeautify &> /dev/null; then
+        _xcbuild "$@"
+    else
+        _xcbuild "$@" | xcbeautify
+    fi
+}
+
+## Check environment
+
 echo "$PWD"
+
+readonly B9_BUILD_VISION_OS=${B9_BUILD_VISION_OS:=1}
+
+if [[ $(checkVar "$B9_BUILD_VISION_OS") != 0 ]]; then
+    echo "Skip building for visionOS."
+fi
+
+## Clean
 
 if [ -d "LAME.xcframework" ]; then
     echo "Remove previous result."
@@ -17,75 +71,42 @@ else
     echo "No previous build, go on."
 fi
 
-xcodebuild archive \
-    -scheme LAME-macOS \
-    -destination "generic/platform=macOS" \
-    -archivePath "build/macOS" \
-    SKIP_INSTALL=NO
+## Build
 
-xcodebuild archive \
-    -scheme LAME-iOS \
-    -destination "generic/platform=iOS" \
-    -archivePath "build/iOS" \
-    SKIP_INSTALL=NO
+xcbuild LAME-macOS "generic/platform=macOS" "build/macOS"
+xcbuild LAME-iOS "generic/platform=iOS" "build/iOS"
+xcbuild LAME-iOS "generic/platform=iOS Simulator" "build/iOS-Simulator"
+xcbuild LAME-iOS "generic/platform=macOS,variant=Mac Catalyst" "build/Catalyst"
+xcbuild LAME-tvOS "generic/platform=tvOS" "build/tvOS"
+xcbuild LAME-tvOS "generic/platform=tvOS Simulator" "build/tvOS-Simulator"
+xcbuild LAME-watchOS "generic/platform=watchOS" "build/watchOS"
+xcbuild LAME-watchOS "generic/platform=watchOS Simulator" "build/watchOS-Simulator"
+if [[ $(checkVar "$B9_BUILD_VISION_OS") == 0 ]]; then
+    xcbuild LAME-visionOS "generic/platform=visionOS" "build/visonOS"
+    xcbuild LAME-visionOS "generic/platform=visionOS Simulator" "build/visonOS-Simulator"
+fi
 
-xcodebuild archive \
-    -scheme LAME-iOS \
-    -destination "generic/platform=iOS Simulator" \
-    -archivePath "build/iOS-Simulator" \
-    SKIP_INSTALL=NO
+## Package
 
-xcodebuild archive \
-    -scheme LAME-iOS \
-    -destination "generic/platform=macOS,variant=Mac Catalyst" \
-    -archivePath "build/Catalyst" \
-    SKIP_INSTALL=NO
+archivePaths=(
+  "build/macOS.xcarchive"
+  "build/iOS.xcarchive"
+  "build/iOS-Simulator.xcarchive"
+  "build/Catalyst.xcarchive"
+  "build/tvOS.xcarchive"
+  "build/tvOS-Simulator.xcarchive"
+  "build/watchOS.xcarchive"
+  "build/watchOS-Simulator.xcarchive"
+)
+if [[ $(checkVar "$B9_BUILD_VISION_OS") == 0 ]]; then
+    archivePaths+=("build/visonOS.xcarchive" "build/visonOS-Simulator.xcarchive")
+fi
 
-xcodebuild archive \
-    -scheme LAME-tvOS \
-    -destination "generic/platform=tvOS" \
-    -archivePath "build/tvOS" \
-    SKIP_INSTALL=NO
+packageCmds=("xcodebuild" "-create-xcframework")
+for part in $archivePaths; do
+    packageCmds+=("-framework" "$part/Products/Library/Frameworks/LAME.framework")
+done
+packageCmds+=("-output" "LAME.xcframework")
 
-xcodebuild archive \
-    -scheme LAME-tvOS \
-    -destination "generic/platform=tvOS Simulator" \
-    -archivePath "build/tvOS-Simulator" \
-    SKIP_INSTALL=NO
-
-xcodebuild archive \
-    -scheme LAME-watchOS \
-    -destination "generic/platform=watchOS" \
-    -archivePath "build/watchOS" \
-    SKIP_INSTALL=NO
-
-xcodebuild archive \
-    -scheme LAME-watchOS \
-    -destination "generic/platform=watchOS Simulator" \
-    -archivePath "build/watchOS-Simulator" \
-    SKIP_INSTALL=NO
-
-xcodebuild archive \
-    -scheme LAME-visionOS \
-    -destination "generic/platform=visionOS" \
-    -archivePath "build/visonOS" \
-    SKIP_INSTALL=NO
-
-xcodebuild archive \
-    -scheme LAME-visionOS \
-    -destination "generic/platform=visionOS Simulator" \
-    -archivePath "build/visonOS-Simulator" \
-    SKIP_INSTALL=NO
-
-xcodebuild -create-xcframework \
-    -framework "build/macOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/iOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/iOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/Catalyst.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/tvOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/tvOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/watchOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/watchOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/visonOS.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -framework "build/visonOS-Simulator.xcarchive/Products/Library/Frameworks/LAME.framework" \
-    -output "LAME.xcframework"
+echo "${packageCmds[*]}"
+"${packageCmds[@]}"

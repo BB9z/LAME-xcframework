@@ -4,10 +4,13 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v4
     - name: XCFramework Make
       run: |
         cd macosx
         ./make-xcframework.sh
+      env:
+        # Seems unable build visionOS at the moment
+        B9_BUILD_VISION_OS: false
