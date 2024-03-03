@@ -11,3 +11,6 @@ jobs:
       run: |
         cd macosx
         ./make-xcframework.sh
+      env:
+        # Seems unable build visionOS at the moment
+        B9_BUILD_VISION_OS: false

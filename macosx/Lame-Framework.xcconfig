@@ -20,4 +20,5 @@ PRODUCT_BUNDLE_IDENTIFIER = net.sourceforge.LAMEframework;
 PRODUCT_MODULE_NAME = LAME;
 PRODUCT_NAME = LAME;
 SKIP_INSTALL = YES;
+WARNING_CFLAGS = -Wno-shift-negative-value -Wno-shorten-64-to-32 -Wno-absolute-value -Wno-comma -Wno-tautological-pointer-compare;
 WRAPPER_EXTENSION = framework;
