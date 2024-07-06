@@ -71,6 +71,11 @@
 		D50E02FE2B9372D90066CB31 /* vbrquantize.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F309A39A5E001379B8 /* vbrquantize.c */; };
 		D50E02FF2B9372D90066CB31 /* VbrTag.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F509A39A5E001379B8 /* VbrTag.c */; };
 		D50E03002B9372D90066CB31 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EA8CC0F709A39A5E001379B8 /* version.c */; };
+		D546187A2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */; };
+		D546187B2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */; };
+		D546187C2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */; };
+		D546187D2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */; };
+		D546187E2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */; };
 		D55AAC5A26E8F9C100DD41EA /* LAME_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32BAE0B70371A74B00C91783 /* LAME_Prefix.pch */; };
 		D55AAC5B26E8F9C100DD41EA /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08709A39A49001379B8 /* lame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D55AAC5C26E8F9C100DD41EA /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8CC08B09A39A55001379B8 /* common.h */; };
@@ -330,6 +335,7 @@
 		8D07F2C80486CC7A007CD1D0 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50E03052B9372D90066CB31 /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50E032E2B937A410066CB31 /* Products */ = {isa = PBXFileReference; lastKnownFileType = text; name = Products; path = ..; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Lame-Framework.xcconfig"; sourceTree = "<group>"; };
 		D55AAC9F26E8F9C100DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55AACE826E8FB3D00DD41EA /* LAME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LAME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -465,6 +471,7 @@
 			children = (
 				8D07F2C70486CC7A007CD1D0 /* Info.plist */,
 				D55AAC5726E8F72800DD41EA /* Lame-Framework.xcconfig */,
+				D54618792C38E5BA007E2E82 /* PrivacyInfo.xcprivacy */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -948,6 +955,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D546187A2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +963,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D546187E2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,6 +971,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D546187B2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,6 +979,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D546187C2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +987,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D546187D2C38E5BA007E2E82 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,7 +1217,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				PLIST_FILE_OUTPUT_FORMAT = binary;
@@ -1248,7 +1259,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
