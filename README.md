@@ -12,7 +12,7 @@ This project aims to archive [LAME](https://lame.sourceforge.io) into the xcfram
 
 LAME.xcframework | Build with   | macOS  | iOS   | tvOS  | watchOS | visionOS
 -----------------|--------------|--------|-------|-------|---------|---------
-3.100.1          | Xcode 15.2   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
+3.100.2          | Xcode 15.4   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
 3.100.0          | Xcode 12.5.1 | 10.10+ |  9.0+ |  9.0+ | 2.0+    | NA
 
 ## Installation
@@ -62,3 +62,11 @@ Or use the following commands.
 cd macosx
 ./make-xcframework.sh
 ```
+
+## Maintenance Notes
+
+### Release
+
+1. Update version in xcconfig and podspec.
+2. Make package.
+3. Update package url and checksum in Package.swift and podspec.

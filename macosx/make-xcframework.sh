@@ -2,6 +2,7 @@
 
 # Build all platform targets and package them into the xcframework.
 # Set `B9_BUILD_VISION_OS` environment variable to 0 can disable building for visionOS.
+# Set `B9_BUILD_SYMBOLS` environment variable to 0 can disable including debug symbols in the xcframework.
 #
 # Copyright © 2021, 2024 BB9z.
 # https://github.com/BB9z/LAME-xcframework
@@ -16,14 +17,14 @@ set -euo pipefail
 # Return: 0 if variable is not empty or 0 or false
 #
 # Usage:
-#   if [[ $(check_var "$test_var") == 0 ]]; then
+#   if [[ $(checkVar "$test_var") == 0 ]]; then
 #       echo "Variable is not 0, false, or empty"
 #   else
 #       echo "Variable is 0, false, or empty"
 #   fi
 checkVar() {
     local var_value="$1"
-    if [[ -z "$var_value" || "$var_value" == "0" || "${var_value:l}" == "false" ]]; then
+    if [[ -z "$var_value" || "$var_value" == "0" || "${var_value}" == "false" ]]; then
         echo "1"
     else
         echo "0"
@@ -38,9 +39,9 @@ function _xcbuild() {
     echo "\nBuilding $scheme for $destination..." >&2
 
     xcodebuild archive \
-        -scheme $scheme \
-        -destination $destination \
-        -archivePath $archivePath \
+        -scheme "$scheme" \
+        -destination "$destination" \
+        -archivePath "$archivePath" \
         SKIP_INSTALL=NO
 }
 
@@ -57,9 +58,13 @@ function xcbuild() {
 echo "$PWD"
 
 readonly B9_BUILD_VISION_OS=${B9_BUILD_VISION_OS:=1}
+readonly B9_BUILD_SYMBOLS=${B9_BUILD_SYMBOLS:=1}
 
 if [[ $(checkVar "$B9_BUILD_VISION_OS") != 0 ]]; then
     echo "Skip building for visionOS."
+fi
+if [[ $(checkVar "$B9_BUILD_SYMBOLS") != 0 ]]; then
+    echo "Skip including debug symbols."
 fi
 
 ## Clean
@@ -69,6 +74,11 @@ if [ -d "LAME.xcframework" ]; then
     rm -r "LAME.xcframework"
 else
     echo "No previous build, go on."
+fi
+
+if [ -d "build" ]; then
+    echo "Clean build directory."
+    rm -r "build"
 fi
 
 ## Build
@@ -103,10 +113,16 @@ if [[ $(checkVar "$B9_BUILD_VISION_OS") == 0 ]]; then
 fi
 
 packageCmds=("xcodebuild" "-create-xcframework")
-for part in $archivePaths; do
+for part in "${archivePaths[@]}"; do
     packageCmds+=("-framework" "$part/Products/Library/Frameworks/LAME.framework")
+    if [[ $(checkVar "$B9_BUILD_SYMBOLS") == 0 ]]; then
+        # -debug-symbols requires full path
+        packageCmds+=(-debug-symbols "$PWD/$part/dSYMs/LAME.framework.dSYM")
+    fi
 done
 packageCmds+=("-output" "LAME.xcframework")
 
 echo "${packageCmds[*]}"
 "${packageCmds[@]}"
+
+echo "✅ Make xcframework done."
