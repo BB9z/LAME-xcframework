@@ -115,3 +115,11 @@ Or use the following commands.
 cd macosx
 ./make-xcframework.sh
 ```
+
+## Maintenance Notes
+
+### Release
+
+1. Update version in xcconfig and podspec.
+2. Make package.
+3. Update package url and checksum in Package.swift and podspec.

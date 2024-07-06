@@ -2,10 +2,14 @@
 //  Lame-Framework.xcconfig
 //  LAME
 //
-//  Created by BB9z on 2021/9/8.
+//  Copyright © 2021, 2024 BB9z.
+//  https://github.com/BB9z/LAME-xcframework
+//
+//  The MIT License
+//  https://opensource.org/licenses/MIT
 //
 
-CURRENT_PROJECT_VERSION = 3.100.1
+CURRENT_PROJECT_VERSION = 3.100.2
 BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 DEFINES_MODULE = YES;
 DYLIB_COMPATIBILITY_VERSION = 1;
