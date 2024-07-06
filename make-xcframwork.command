@@ -7,7 +7,6 @@
 
 set -euo pipefail
 cd "$(dirname "$0")/macosx"
-echo "$PWD"
 
 if [ -x "$(command -v xcpretty)" ]; then
     sh ./make-xcframework.sh | xcpretty
