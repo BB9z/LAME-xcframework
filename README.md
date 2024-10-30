@@ -12,7 +12,7 @@ This project aims to archive [LAME](https://lame.sourceforge.io) into the xcfram
 
 LAME.xcframework | Build with   | macOS  | iOS   | tvOS  | watchOS | visionOS
 -----------------|--------------|--------|-------|-------|---------|---------
-3.100.3          | Xcode 15.4   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
+3.100.3          | Xcode 16.0   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
 3.100.0          | Xcode 12.5.1 | 10.10+ |  9.0+ |  9.0+ | 2.0+    | NA
 
 ## Installation
@@ -28,7 +28,7 @@ Through Package.swift, add LAME as a dependency:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/BB9z/LAME-xcframework.git", .upToNextMajor(from: "3.100.1"))
+    .package(url: "https://github.com/BB9z/LAME-xcframework.git", .upToNextMajor(from: "3.100.3"))
 ]
 ```
 
@@ -67,6 +67,6 @@ cd macosx
 
 ### Release
 
-1. Update version in xcconfig and podspec.
+1. Update version in xcconfig, podspec and readme.
 2. Make package.
 3. Update package url and checksum in Package.swift and podspec.
