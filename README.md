@@ -12,7 +12,7 @@ This project aims to archive [LAME](https://lame.sourceforge.io) into the xcfram
 
 LAME.xcframework | Build with   | macOS  | iOS   | tvOS  | watchOS | visionOS
 -----------------|--------------|--------|-------|-------|---------|---------
-3.100.2          | Xcode 15.4   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
+3.100.3          | Xcode 15.4   | 10.13+ | 12.0+ | 12.0+ | 4.0+    | 1.0+
 3.100.0          | Xcode 12.5.1 | 10.10+ |  9.0+ |  9.0+ | 2.0+    | NA
 
 ## Installation
