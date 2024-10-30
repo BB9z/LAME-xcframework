@@ -24,8 +24,8 @@ readonly hasDSYMs=$((countDSYMs > 0))
 
 if [ $hasDSYMs = 1 ]; then
     echo "\nPackaging with dSYMs..."
-    zip -r -9 LAME.xcframework_with_dsyms.zip LAME.xcframework LICENSE LICENSE-LAME COPYING
-    
+    zip -yr -9 LAME.xcframework_with_dsyms.zip LAME.xcframework LICENSE LICENSE-LAME COPYING
+
     echo "\nRemove dSYMs for package again..."
     find "$ROOT_DIR/LAME.xcframework" -name "dSYMs" -type d -exec rm -rfv {} +
 
@@ -37,7 +37,7 @@ if [ $hasDSYMs = 1 ]; then
 fi
 
 echo "\nPackaging..."
-zip -r -9 LAME.xcframework.zip LAME.xcframework LICENSE LICENSE-LAME COPYING
+zip -yr -9 LAME.xcframework.zip LAME.xcframework LICENSE LICENSE-LAME COPYING
 
 checksum=$(swift package compute-checksum LAME.xcframework.zip)
 echo "Checksum: $checksum"
